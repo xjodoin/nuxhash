@@ -48,7 +48,7 @@ Then, install nuxhash.
 
 ```
 $ sudo apt install python3-pip
-$ sudo pip3 install git+https://github.com/YoRyan/nuxhash
+$ sudo pip3 install git+https://github.com/xjodoin/nuxhash
 ```
 
 To start the daemon, run `nuxhashd`. To start the graphical interface, run `nuxhash-gui`.
