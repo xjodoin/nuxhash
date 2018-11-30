@@ -26,9 +26,9 @@ from nuxhash.switching.naive import NaiveSwitcher
 from nuxhash.version import __version__
 
 
-BENCHMARK_SECS = 60
+BENCHMARK_SECS = 20
 DONATE_PROB = 0.005
-DONATE_ADDRESS = '3Qe7nT9hBSVoXr8rM2TG6pq82AmLVKHy23'
+DONATE_ADDRESS = '3M1NtrfeE5xuLMFMnoVmtA6Wukgdm3mJtt'
 
 
 def main():
@@ -331,4 +331,3 @@ class MiningSession(object):
         # Empty the scheduler.
         for job in self._scheduler.queue:
             self._scheduler.cancel(job)
-
