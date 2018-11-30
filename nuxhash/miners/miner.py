@@ -2,7 +2,7 @@ import logging
 from functools import wraps
 
 
-SHORT_WARMUP_SECS = 10
+SHORT_WARMUP_SECS = 5
 LONG_WARMUP_SECS = 300
 
 
