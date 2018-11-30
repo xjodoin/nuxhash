@@ -2,7 +2,7 @@ import logging
 from functools import wraps
 
 
-SHORT_WARMUP_SECS = 30
+SHORT_WARMUP_SECS = 10
 LONG_WARMUP_SECS = 300
 
 
@@ -116,4 +116,3 @@ def log_output(process):
             # Reset terminal colors.
             logging.debug(line + '\033[0m')
     process.stdout.close()
-
