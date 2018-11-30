@@ -393,7 +393,7 @@ class Excavator(miner.Miner):
             runnable = ExcavatorAlgorithm(self, algorithm,
                                           warmup_secs=miner.SHORT_WARMUP_SECS)
             self.algorithms.append(runnable)
-        self.server = ExcavatorServer(config_dir/'excavator'/'excavator')
+        self.server = ExcavatorServer('excavator')
 
     def load(self):
         self.server.start()
@@ -408,4 +408,3 @@ class Excavator(miner.Miner):
     def settings(self, v):
         miner.Miner.settings.setter(v)
         self.server.settings = v
-
